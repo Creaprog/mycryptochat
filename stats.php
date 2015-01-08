@@ -10,10 +10,10 @@ $dbManager = new DbManager();
 $nbChatrooms = $dbManager->GetNbChatRooms();
 $nbMessages = $dbManager->GetNbMessages();
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <title>Stats - MyCryptoChat by HowTommy.net</title>
+    <title>MyCryptoChat</title>
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <link href="styles/myCryptoChat.css" rel="stylesheet" />
@@ -30,8 +30,8 @@ $nbMessages = $dbManager->GetNbMessages();
                 </section>
                 <nav>
                     <ul id="menu">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="stats.php">Stats</a></li>
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="stats.php">Statistique</a></li>
                         <li><a href="about.php">About</a></li>
                     </ul>
                 </nav>
@@ -41,11 +41,11 @@ $nbMessages = $dbManager->GetNbMessages();
     <div id="body">
         <section class="content-wrapper main-content clear-fix">
 
-            <h2>Stats about MyCryptoChat</h2>
+            <h2>Les statistiques de MyCryptoChat</h2>
 
             <p>
-                Number of chat rooms: <?php echo $nbChatrooms; ?><br />
-                Number of messages: <?php echo $nbMessages; ?>
+                Nombre de salle de chat : <?php echo $nbChatrooms; ?><br />
+                Nombre de messages: <?php echo $nbMessages; ?>
             </p>
 
         </section>
@@ -53,7 +53,7 @@ $nbMessages = $dbManager->GetNbMessages();
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
-                <p>&copy; 2013 - MyCryptoChat <?php echo MYCRYPTOCHAT_VERSION; ?> by HowTommy.net</p>
+                <p>&copy; 2015 - MyCryptoChat <?php echo MYCRYPTOCHAT_VERSION; ?>.</p>
             </div>
         </div>
     </footer>

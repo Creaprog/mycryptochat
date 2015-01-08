@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <title>Home - MyCryptoChat by HowTommy.net</title>
+    <title>MyCryptoChat</title>
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <link href="styles/myCryptoChat.css" rel="stylesheet" />
@@ -92,8 +92,8 @@
                 </section>
                 <nav>
                     <ul id="menu">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="stats.php">Stats</a></li>
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="stats.php">Statistique</a></li>
                         <li><a href="about.php">About</a></li>
                     </ul>
                 </nav>
@@ -105,31 +105,31 @@
 
             <h2>MyCryptoChat</h2>
 
-            <div class="mb20">Chat with friends without anyone spying on what you say!</div>
+            <div class="mb20">Discutez avec vos amis sans que personne ne vous espionne sur ce que vous dites !</div>
 
             <form method="POST" action="newroom.php">
-                <label for="nbMinutesToLive">Lifetime of the chat room:</label>
+                <label for="nbMinutesToLive">Durée de la salle de discution</label>
                 <select id="nbMinutesToLive" name="nbMinutesToLive">
 					<?php if(NB_MINUTES_TO_LIVE_MAX == 0) { ?>
-						<option value="0">Unlimited</option>
+						<option value="0">Illimité</option>
 					<?php }
                           if (NB_MINUTES_TO_LIVE_MAX == 0 || NB_MINUTES_TO_LIVE_MAX >= 5) { ?>
 						<option value="5">5 minutes</option>
 					<?php }
                           if (NB_MINUTES_TO_LIVE_MAX == 0 || NB_MINUTES_TO_LIVE_MAX >= 60) { ?>
-						<option value="60">1 hour</option>
+						<option value="60">1 heure</option>
 					<?php }
                           if (NB_MINUTES_TO_LIVE_MAX == 0 || NB_MINUTES_TO_LIVE_MAX >= 1440) { ?>
-						<option value="1440">1 day</option>
+						<option value="1440">1 jour</option>
 					<?php }
                           if (NB_MINUTES_TO_LIVE_MAX == 0 || NB_MINUTES_TO_LIVE_MAX >= 10080) { ?>
-						<option value="10080">7 days</option>
+						<option value="10080">7 jours</option>
 					<?php }
                           if (NB_MINUTES_TO_LIVE_MAX == 0 || NB_MINUTES_TO_LIVE_MAX >= 40320) { ?>
-						<option value="40320">30 days</option>
+						<option value="40320">30 jours</option>
 					<?php }
                           if (NB_MINUTES_TO_LIVE_MAX == 0 || NB_MINUTES_TO_LIVE_MAX >= 525960) { ?>
-						<option value="525960">1 year</option>
+						<option value="525960">1 an</option>
 					<?php } ?>
                 </select><br />
                 <br />
@@ -138,24 +138,24 @@
                 <label for="isRemovable" class="labelIndex">Is removable</label>
 				<br />
 				<div id="divRemovePassword">
-					<br /><label for="removePassword">Password to remove:</label>
+					<br /><label for="removePassword">Mot de passe pour suppression:</label>
 					<input type="text" name="removePassword" value="" />
 				</div>
 				<br />
 				
 				<input type="checkbox" name="selfDestroys" id="selfDestroys" value="true" />
-                <label for="selfDestroys" class="labelIndex">Self-destroys if more than one visitor</label>
+                <label for="selfDestroys" class="labelIndex">Auto-destruction, si plus aucun visiteur</label>
 				<br />
 				
 				<br />
-                <input type="submit" value="Create a new chat room" />
+                <input type="submit" value="Créer un salon !" />
             </form>
         </section>
     </div>
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
-                <p>&copy; 2013 - MyCryptoChat <?php echo MYCRYPTOCHAT_VERSION; ?> by HowTommy.net</p>
+                <p>&copy; 2015 - MyCryptoChat <?php echo MYCRYPTOCHAT_VERSION; ?>.</p>
             </div>
         </div>
     </footer>

@@ -1,6 +1,6 @@
 <?php
 // modify it: replace 'f-rjng24!1r5TRHHgnjrt' by some random characters
-define('SEED', 'f-rjng24!1r5TRHHgnjrt');
+define('SEED', 'fdklgjdfklgjdfklgjdfogijdogfijdgjdfgjdf545454-dfgdfgjdgkdfjgdfkjgdfgjdmflgdf655645645645612032sg45s6g4<gokrhjptgqrhuikjghjsbvgxkjcbvcnbvhjsvgsuimm');
 
 define('DEFAULT_NB_MINUTES_TO_LIVE', 30);
 

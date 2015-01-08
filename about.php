@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <title>About - MyCryptoChat by HowTommy.net</title>
+        <title>MyCryptoChat</title>
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         <link href="styles/myCryptoChat.css" rel="stylesheet"/>
@@ -21,8 +21,8 @@
                     </section>
                     <nav>
                         <ul id="menu">
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="stats.php">Stats</a></li>
+                            <li><a href="index.php">Accueil</a></li>
+                            <li><a href="stats.php">Statistique</a></li>
                             <li><a href="about.php">About</a></li>
                         </ul>
                     </nav>
@@ -35,27 +35,22 @@
  <h2>About</h2>
 
 <p>
-    MyCryptoChat is a simple PHP encrypted chat rooms manager. Everything is encrypted on the client side, so noone can spy on what you say.<br />
+    MyCryptoChat est un PHP crypté qui comprend une gestion de salles de chat. Tout est crypté sur le côté client, pour que personne ne puisse vous espionnez sur ce que vous dites.<br />
     <br />
     
-    <a href="https://mycryptochatphp.codeplex.com/">More informations here</a>
+    <a href="https://mycryptochatphp.codeplex.com/">Plus d'information ici.</a>
     <br /><br />
-    Author: Tommy of <a href="http://blog.howtommy.net">HowTommy.net</a>
-    <br />
-    <a href="http://blog.howtommy.net/?d=2010/01/01/01/01/01-me-contacter">Contact</a>
 </p>
             </section>
         </div>
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; 2013 - MyCryptoChat <?php require 'inc/constants.php'; echo MYCRYPTOCHAT_VERSION; ?> by HowTommy.net</p>
+                    <p>&copy; 2015 - MyCryptoChat <?php require 'inc/constants.php'; echo MYCRYPTOCHAT_VERSION; ?>.</p>
                 </div>
             </div>
         </footer>
 
         <script src="scripts/jquery.js"></script>
-
-        
     </body>
 </html>

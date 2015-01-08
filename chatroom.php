@@ -10,10 +10,10 @@
 	$chatRoom = $dbManager->GetChatroom($_GET['id']);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <title>Private chat room - MyCryptoChat by HowTommy.net</title>
+    <title>MyCryptoChat</title>
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <link href="styles/myCryptoChat.css" rel="stylesheet" />
@@ -41,13 +41,13 @@
     <div id="body">
         <section class="content-wrapper main-content clear-fix">
             <h2>MyCryptoChat</h2>
-            <div class="mb20">Chat with friends without anyone spying on what you say!</div>
+            <div class="mb20">Discutez avec vos amis sans que personne ne vous espionne sur ce que vous dites !</div>
 
             <div id="chatroom"></div>
-            <div id="divUsers"><span id="nbUsers">1</span> user(s) online</div>
+            <div id="divUsers"><span id="nbUsers">1</span> utilisateur(s) connecté</div>
 
             <div>
-                Name:
+                Nom:
 
     <input type="text" id="userName" /><br />
                 <textarea id="textMessage" onkeydown="if (event.keyCode == 13 && !event.shiftKey) { sendMessage(); }"></textarea><br />
@@ -67,7 +67,7 @@
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
-                <p>&copy; 2013 - MyCryptoChat <?php echo MYCRYPTOCHAT_VERSION; ?> by HowTommy.net</p>
+                <p>&copy; 2015 - MyCryptoChat <?php echo MYCRYPTOCHAT_VERSION; ?>.</p>
             </div>
         </div>
     </footer>
